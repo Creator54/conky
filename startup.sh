@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
+pkill conky
 
-
-sleep 20
 #(CORRECT WITH YOUR PATH!!)
-conky -c ~/.conky/minimalism/MangoRC &
+conky -c ~/.conky/minimalismRC &
 
 exit

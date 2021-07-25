@@ -57,9 +57,9 @@ conky.config = {
 	    minimum_width = 400, minimum_height = 700,
 
       --CORRECT THIS PATH
-      lua_load = '~/.conky/minimalism/clocks.lua',
+      lua_load = '~/.conky/clocks.lua',
       lua_draw_hook_pre = 'clock_rings',
-      --lua_load = '~/.conky/minimalism/clicky.lua',
+      --lua_load = '~/.conky/clicky.lua',
       --lua_draw_hook_pre = 'main',
 };
 
@@ -67,13 +67,13 @@ conky.text = [[
 
   ${voffset -25}${offset 180}${font neuropol:size=20}${time %H:%M}${font}  ${font Nimbus Mono L:size=9}$uptime
   ${voffset 14}${offset 178}${color #ad1a26}${font Roboto-Italic:size=12}${exec date +%B\ %Y | sed 's/^.\| [a-z]/\U&/g'}
-  ##Replace 'enp3s0' with name of your network interface
-  ${offset 122}${voffset 75}${color #FFFFFF}${font Roboto-Medium:size=17}Dw  ${color #ad1a26}${downspeed enp3s0}
-  ##Replace 'enp3s0' with name of your network interface
-  ${offset 118}${voffset 10}${color #FFFFFF}Up ${offset 10}${color #ad1a26}${upspeed enp3s0}
-  ##Replace 'enp3s0' with name of your network interface
-  ${offset 120}${voffset 5}${font Roboto-Regularsize=12}${color #FFFFFF}TDown   ${color #00695c}${totaldown enp3s0}
-  #${offset 90}${voffset 30}${font Roboto-Regularsize=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.conky/minimalism/cmus-conky}}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 118}${voffset 120}${color #FFFFFF}${font Roboto-Medium:size=12}DOWN  ${color #ad1a26}${downspeed wlp3s0}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 118}${voffset 10}${color #FFFFFF}UP ${offset 10}${color #ad1a26}${upspeed wlp3s0}
+  ##Replace 'wlp3s0' with name of your network interface
+  ${offset 120}${voffset 5}${font Roboto-Medium:size=12}${color #FFFFFF}USAGE  ${color #00695c}${totaldown wlp3s0}
+  #${offset 90}${voffset 30}${font Roboto-Medium:size=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.conky/cmus-conky}}
   ${offset 68}${voffset 120}${font Roboto-Regular:size=15}${color #FFFFFF}CPU
   ${offset 188}${voffset 35}${font Roboto-Regular:size=8}Core 0
   ${offset 234}${voffset -15}Core 1
@@ -85,6 +85,6 @@ conky.text = [[
   ${offset 175}${color #ad1a26}[$memperc%]
   ${offset 205}${voffset 2}${color #ffffff}${font Roboto-Bold:size=14}MEM
   ##CORRECT THIS PATH
-  ${image ~/.conky/minimalism/Archlinux-icon.png -p 280,130 -s 110x110}
+  ${image ~/.conky/nixos.png -p 280,130 -s 110x110}
 
 ]];

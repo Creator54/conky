@@ -44,7 +44,7 @@ settings_table = {
   },
   {
      name='downspeedf',
-     arg='enp3s0',
+     arg='wlp3s0',
      max=800,
      bg_colour=0xffffff,
      bg_alpha=0.1,
@@ -58,7 +58,7 @@ settings_table = {
   },
   {
      name='upspeedf',
-     arg='enp3s0',
+     arg='wlp3s0',
      max=800,
      bg_colour=0xffffff,
      bg_alpha=0.1,
