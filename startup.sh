@@ -3,6 +3,6 @@
 pkill conky
 
 #(CORRECT WITH YOUR PATH!!)
-conky -c ~/.conky/minimalismRC &
+conky -c minimalismRC &
 
 exit

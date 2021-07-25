@@ -57,9 +57,9 @@ conky.config = {
 	    minimum_width = 400, minimum_height = 700,
 
       --CORRECT THIS PATH
-      lua_load = '~/.conky/clocks.lua',
+      lua_load = '~/.config/conky/clocks.lua',
       lua_draw_hook_pre = 'clock_rings',
-      --lua_load = '~/.conky/clicky.lua',
+      --lua_load = '~/.config/conky/clicky.lua',
       --lua_draw_hook_pre = 'main',
 };
 
@@ -73,7 +73,7 @@ conky.text = [[
   ${offset 118}${voffset 10}${color #FFFFFF}UP ${offset 10}${color #ad1a26}${upspeed wlp3s0}
   ##Replace 'wlp3s0' with name of your network interface
   ${offset 120}${voffset 5}${font Roboto-Medium:size=12}${color #FFFFFF}USAGE  ${color #00695c}${totaldown wlp3s0}
-  #${offset 90}${voffset 30}${font Roboto-Medium:size=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.conky/cmus-conky}}
+  #${offset 90}${voffset 30}${font Roboto-Medium:size=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.config/conky/cmus-conky}}
   ${offset 68}${voffset 120}${font Roboto-Regular:size=15}${color #FFFFFF}CPU
   ${offset 188}${voffset 35}${font Roboto-Regular:size=8}Core 0
   ${offset 234}${voffset -15}Core 1
@@ -85,6 +85,6 @@ conky.text = [[
   ${offset 175}${color #ad1a26}[$memperc%]
   ${offset 205}${voffset 2}${color #ffffff}${font Roboto-Bold:size=14}MEM
   ##CORRECT THIS PATH
-  ${image ~/.conky/nixos.png -p 280,130 -s 110x110}
+  ${image ~/.config/conky/nixos.png -p 280,130 -s 110x110}
 
 ]];
