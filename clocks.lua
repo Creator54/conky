@@ -50,7 +50,7 @@ settings_table = {
      bg_alpha=0.1,
      fg_colour=0xffffff,
      fg_alpha=0.6,
-     x=104, y=238,
+     x=180, y=238,
      radius=60,
      thickness=3,
      start_angle=0,
@@ -63,8 +63,8 @@ settings_table = {
      bg_colour=0xffffff,
      bg_alpha=0.1,
      fg_colour=0xffffff,
-     fg_alpha=0.6,
-     x=104, y=238,
+     fg_alpha=1,
+     x=180, y=240,
      radius=50,
      thickness=10,
      start_angle=0,
@@ -323,8 +323,8 @@ end
   DrawLine(cr,100,75,170,0,4)
 
   --draw network lines
-  DrawLine(cr,398,155,0,23,4)
-  DrawLine(cr,0,155,400,0,4)
+  --DrawLine(cr,398,155,0,23,4)
+  --DrawLine(cr,0,155,400,0,4)
   --draw cpu temp bars
   DrawBars(cr,250,470,30,100,0,rgb_to_r_g_b(0x607d8b))
   DrawBars(cr,290,470,30,100,1,rgb_to_r_g_b(0x3f51b5))
