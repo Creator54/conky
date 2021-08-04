@@ -68,9 +68,9 @@ conky.text = [[
   ${voffset -25}${offset 180}${font neuropol:size=20}${time %H:%M}${font}  ${font Nimbus Mono L:size=9}$uptime
   ${voffset 14}${offset 178}${color #ad1a26}${font Roboto-Italic:size=16}${exec date +%a\ %d\ %b\ %y | sed 's/^.\| [a-z]/\U&/g'}
   ##Replace 'wlp3s0' with name of your network interface
-  ${offset 182}${voffset 100}${color #FFFFFF}${font Roboto-Medium:size=12}DOWN  ${color #ad1a26}${downspeed wlp3s0}
+  ${offset 182}${voffset 100}${color #FFFFFF}${font Roboto-Medium:size=12}DOWN  ${color #ad1a26}${downspeed wlp3s0}/S
   ##Replace 'wlp3s0' with name of your network interface
-  ${offset 190}${voffset 10}${color #FFFFFF}UP ${offset 10}${color #ad1a26}${upspeed wlp3s0}
+  ${offset 190}${voffset 10}${color #FFFFFF}UP ${offset 10}${color #ad1a26}${upspeed wlp3s0}/S
   ##Replace 'wlp3s0' with name of your network interface
   ${offset 190}${voffset 5}${font Roboto-Medium:size=12}${color #FFFFFF}USAGE  ${color #00695c}${totaldown wlp3s0}
   #${offset 90}${voffset 30}${font Roboto-Medium:size=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.config/conky/cmus-conky}}
