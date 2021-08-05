@@ -319,11 +319,11 @@ end
 
   --parse in arguments as so (cr,startx postion,starty postion, how much to move x, how much to move y)
   DrawLine(cr,30,0,343,0,8)
-  DrawLine(cr,343,0,0,35,4)
+  DrawLine(cr,343,0,0,31,4)
   DrawLine(cr,120,75,170,0,4)
 
   --draw network lines
-  DrawLine(cr,325,295,0,23,4)
+  DrawLine(cr,325,301,0,20,4)
   --DrawLine(cr,0,155,400,0,4)
   --draw cpu temp bars
   DrawBars(cr,250,470,30,100,0,rgb_to_r_g_b(0x607d8b))
@@ -332,7 +332,7 @@ end
   DrawBars(cr,370,470,30,100,3,rgb_to_r_g_b(0xe53935))
   --draw cpu temp lines
   DrawLine(cr,30,320,348,0,4)
-  DrawLine(cr,348,318,0,35,4)
+  DrawLine(cr,348,318,0,30,4)
   --draw mem lines
   DrawLine(cr,30,585,144,0,4)
   DrawLine(cr,30,378,4,0,750)
