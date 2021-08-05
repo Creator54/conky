@@ -65,7 +65,7 @@ conky.config = {
 
 conky.text = [[
 
-  ${voffset -25}${offset 180}${font neuropol:size=20}${time %H:%M}${font}  ${font Nimbus Mono L:size=9}$uptime
+  ${voffset -25}${offset 180}${font neuropol:size=15}${time %r}${font}  ${font Nimbus Mono L:size=9}$uptime
   ${voffset 14}${offset 178}${color #ad1a26}${font Roboto-Italic:size=16}${exec date +%a\ %d\ %b\ %y | sed 's/^.\| [a-z]/\U&/g'}
   ##Replace 'wlp3s0' with name of your network interface
   ${offset 182}${voffset 100}${color #FFFFFF}${font Roboto-Medium:size=12}DOWN  ${color #ad1a26}${downspeed wlp3s0}/S
@@ -75,15 +75,15 @@ conky.text = [[
   ${offset 190}${voffset 5}${font Roboto-Medium:size=12}${color #FFFFFF}USAGE  ${color #00695c}${totaldown wlp3s0}
   #${offset 90}${voffset 30}${font Roboto-Medium:size=12}${color #FFFFFF}Song:${offset 21}${color #af1616}${scroll 17 ${execi 2 ~/.config/conky/cmus-conky}}
   ${offset 68}${voffset 120}${font Roboto-Regular:size=15}${color #FFFFFF}CPU
-  ${offset 188}${voffset 35}${font Roboto-Regular:size=8}Core 0
-  ${offset 234}${voffset -15}Core 1
-  ${offset 274}${voffset -15}Core 2
-  ${offset 314}${voffset -15}Core 3
+  ${offset 188}${voffset 40}${font Roboto-Regular:size=8}Core 0
+  ${offset 234}${voffset -13}Core 1
+  ${offset 274}${voffset -13}Core 2
+  ${offset 314}${voffset -13}Core 3
 
-  ${offset 100}${voffset 3}${font Roboto-Regular:size=11}${fs_used /} / ${fs_size /}
-  ${offset 90} $mem / $memmax
-  ${offset 175}${color #ad1a26}[$memperc%]
-  ${offset 205}${voffset 2}${color #ffffff}${font Roboto-Bold:size=14}MEM
+  ${offset 220}${voffset 180}${font Roboto-Regular:size=11}ROOT: ${fs_used /} / ${fs_size /}
+  ${offset 215}${voffset 3}${font Roboto-Regular:size=11}HOME: ${fs_used /home} / ${fs_size /home}
+  ${offset 210} RAM: $mem / $memmax
+  ${offset 203}${voffset -160}${color #ffffff}${font Roboto-Bold:size=14}MEM
   ##CORRECT THIS PATH
   ${image ~/.config/conky/logo.png -p 65,126 -s 130x130}
 
