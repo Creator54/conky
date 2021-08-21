@@ -319,7 +319,7 @@ end
 
   --parse in arguments as so (cr,startx postion,starty postion, how much to move x, how much to move y)
   DrawLine(cr,30,0,343,0,8)
-  DrawLine(cr,343,0,0,31,4)
+  DrawLine(cr,343,0,0,30,4)
   DrawLine(cr,50,80,255,0,4)
   DrawLine(cr,50,60,0,82,4)
   DrawLine(cr,30,100,20,0,4)
@@ -337,7 +337,7 @@ end
   DrawLine(cr,30,320,348,0,4)
   DrawLine(cr,348,318,0,30,4)
   --draw mem lines
-  DrawLine(cr,30,585,144,0,4)
+  DrawLine(cr,30,585,133,0,4)
   DrawLine(cr,30,300,4,0,800)
   DrawLine(cr,30,755,230,0,4)
   DrawLine(cr,30,850,4,0,320)

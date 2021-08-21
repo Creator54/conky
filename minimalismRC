@@ -65,7 +65,7 @@ conky.config = {
 
 conky.text = [[
 
-  ${voffset -25}${offset 165}${font neuropol:size=15}${time %r}${font}  ${font Nimbus Mono Bold L:size=9}$uptime
+  ${voffset -20}${offset 170}${font neuropol:size=13}${time %r}${font}  ${font Nimbus Mono Bold L:size=9}$uptime
   ${voffset 30}${offset 250}${color #FFFFFF}${font Roboto-Italic:size=16}${exec date +%a\ %d\ %b\ %y | sed 's/^.\| [a-z]/\U&/g'}
   ##Replace 'wlp3s0' with name of your network interface
   ${offset 182}${voffset 100}${color #FFFFFF}${font Roboto-Medium:size=12}DOWN  ${color #FFFFFF}${downspeed wlp3s0}/S
